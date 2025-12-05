@@ -1,0 +1,90 @@
+{
+  "wishes": [
+    {
+      "id": "3",
+      "title": "PC",
+      "description": "nice pc",
+      "imagePath": "https://m.media-amazon.com/images/I/61GGZRBy8KL.jpg",
+      "price": 6199,
+      "createdAt": "2024-12-03T17:10:58.899Z"
+    },
+    {
+      "title": "Smartphone ChickenMac",
+      "description": "Latest model smartphone with advanced features.",
+      "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3j9Tm0c2L9OyDL4_CdvLn_J2rnVLeOprk3w&s",
+      "price": 999.99,
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "Travel Backpack",
+      "description": "Durable backpack for all my travel needs.",
+      "imagePath": "",
+      "price": 149.99,
+      "createdAt": "2025-06-18T11:20:00.000Z"
+    },
+    {
+      "id": "8",
+      "title": "Fitness Tracker",
+      "description": "Track my workouts and health metrics.",
+      "imagePath": "",
+      "price": 199.99,
+      "createdAt": "2025-08-30T08:15:00.000Z"
+    },
+    {
+      "id": "12",
+      "title": "4K Monitor",
+      "description": "High-resolution monitor for work and entertainment.",
+      "imagePath": "",
+      "price": 349.99,
+      "createdAt": "2025-12-01T12:00:00.000Z"
+    },
+    {
+      "title": "Steel Pate",
+      "description": "Natus itaque ut quis",
+      "imagePath": "https://i.mi.ua/media/catalog/product/cache/1/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/a/_/a_2025-43u-left__1_2.webp",
+      "price": 132,
+      "id": "f0c1"
+    },
+    {
+      "id": "f8ea",
+      "title": "Karen Newman",
+      "description": "Enim natus illum ve",
+      "imagePath": "https://content.rozetka.com.ua/goods/images/big_tile/523640536.jpg",
+      "price": 731,
+      "createdAt": "2025-12-05T12:20:40.084Z"
+    },
+    {
+      "id": "90a8",
+      "title": "Gage Hopper",
+      "description": "Odit labore suscipit",
+      "imagePath": "https://cdn.new-brz.net/app/public/models/MYX33HX-A/small/j/250331120300877100.jpg",
+      "price": 369,
+      "createdAt": "2025-12-05T12:20:56.853Z"
+    },
+    {
+      "id": "e6b6",
+      "title": "Rigel Heath",
+      "description": "Qui sequi exercitati",
+      "imagePath": "https://habrastorage.org/getpro/habr/upload_files/c26/fdc/382/c26fdc38220cac38c51541d94a5577a6.JPG",
+      "price": 22,
+      "createdAt": "2025-12-05T12:39:31.386Z"
+    },
+    {
+      "id": "76e1",
+      "title": "Merrill Rosales",
+      "description": "Sequi omnis quo qui ",
+      "imagePath": "Officiis quo et inci",
+      "price": 933,
+      "createdAt": "2025-12-05T14:13:50.397Z"
+    },
+    {
+      "id": "0e7d",
+      "title": "Quincy Lindsay",
+      "description": "Sint sit quod ipsum",
+      "imagePath": "Ut quibusdam blandit",
+      "price": 923,
+      "createdAt": "2025-12-05T14:59:07.688Z"
+    }
+  ]
+}
