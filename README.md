@@ -1,32 +1,77 @@
-# Bits Task — Dashboard
 
-This adds a `Dashboard` page with filters, actions, add/update modals, delete confirmation, and a card grid.
 
-Quick start (Windows PowerShell):
+## 🔎 Опис  
+Цей проєкт — простий CRUD-додаток на React + Vite + TypeScript з fake API на json-server.  
+З його допомогою можна: створювати, читати, оновлювати і видаляти “wishes” (бажання), переглядати деталі, фільтрувати, сортувати та редагувати.  
 
-1. Install dependencies
+## 🛠 Технології  
+- React + TypeScript  
+- Vite (для дев/білду)  
+- json-server (для fake REST API)  
+- fetch / власний API-хук (без Axios)  
+- Context + useReducer (для стану)  
+- CSS / Tailwind або інший CSS-фреймворк  
 
-```powershell
+
+# Запуск проєкту — детальна інструкція
+
+## 🧩 Структура (приклад)
+```
+project-root/
+  ├─ package.json
+  ├─ db.json
+  ├─ src/
+  ├─ server/ (необов'язково)
+       └─ db.json
+```
+
+---
+
+# 🔧 Запуск клієнтської частини (React + Vite)
+
+1. Перейти до кореня проєкту:
+```bash
+cd /path/to/project-root
+```
+
+2. Встановити залежності:
+```bash
 npm install
 ```
 
-2. Run json-server (optional but recommended) from project root:
-
-```powershell
-npx json-server --watch db.json --port 3000
-```
-
-This serves the fake API at `http://localhost:3000/wishes`.
-
-3. Start dev server
-
-```powershell
+3. Запустити Vite dev server:
+```bash
 npm run dev
 ```
 
-Open `http://localhost:5173/dashboard` (port may vary).
+4. Відкрити у браузері (звичайно):
+```
+http://localhost:5173
+```
 
-Notes:
-- The Dashboard uses `src/lib/wishes-api.ts` to call the fake API. If json-server isn't running the app will still work but POST/PUT/DELETE will fail.
-- Components added in `src/components/dashboard/`.
+---
 
+# 🔧 Запуск сервера (json-server)
+
+1. Перейти у папку, де лежить db.json:
+```bash
+cd /path/to/project-root/server
+```
+
+2. Встановити залежності (якщо є пакет server):
+```bash
+npm install
+```
+
+3. Запустити json-server:
+```bash
+npx json-server db.json
+```
+
+API буде доступне за адресами:
+```
+GET    http://localhost:3000/wishes
+POST   http://localhost:3000/wishes
+PUT    http://localhost:3000/wishes/:id
+DELETE http://localhost:3000/wishes/:id
+```
