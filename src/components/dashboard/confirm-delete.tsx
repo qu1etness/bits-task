@@ -1,7 +1,6 @@
-import React from "react";
-import type { Wish } from "../../services/wishesApi.ts";
+import type {IWish} from "@/interfaces/wish-interface.ts";
 
-const ConfirmDelete: React.FC<{ item: Wish; onCancel: () => void; onConfirm: () => void }> = ({ item, onCancel, onConfirm }) => {
+const ConfirmDelete = ({ item, onCancel, onConfirm }: { item: IWish; onCancel: () => void; onConfirm: () => void }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/30">
       <div className="bg-white p-4 rounded w-full max-w-sm">

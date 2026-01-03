@@ -1,25 +1,18 @@
 import GoBackButton from "@/components/wish-detail/go-back-button.tsx";
-import {useParams} from "react-router";
-import {toast} from "sonner";
+import { useParams } from "react-router";
+import { toast } from "sonner";
 import ManageWish from "@/components/wish-detail/manage-wish.tsx";
-import {useCallback, useEffect} from "react";
-import {useWishesContext} from "@/hooks/use-wishes-contex.ts";
+import { useCallback, useEffect } from "react";
+import { useWishesContext } from "@/hooks/use-wishes-contex.ts";
 
 const WishDetailsPage = () => {
     const { id } = useParams<{ id: string }>();
 
-    const { state: { currentWish: data, currentStatus } , getWish } = useWishesContext()
+    const { state: { currentWish: data, currentStatus }, getWish } = useWishesContext()
 
     const handleRevalidation = useCallback(async () => {
         if (id !== undefined) {
-            try {
-                await getWish(id);
-                toast.success("Дані успішно оновлено!");
-            } catch (e) {
-                // Тут ловимо помилку, якщо Thunk кинув її
-                const errorMessage = e instanceof Error ? e.message : 'Не вдалося повторно завантажити дані.';
-                toast.error(errorMessage);
-            }
+            await getWish(id);
         }
     }, [id, getWish]);
 
@@ -45,10 +38,10 @@ const WishDetailsPage = () => {
 
     return (
         <div className="w-full min-h-screen bg-background">
-            <GoBackButton/>
-            <div className="w-full h-[1px] bg-border"/>
-            <ManageWish wish={data} onRevalidate={handleRevalidation}/>
-            <div className="w-full h-[1px] bg-border"/>
+            <GoBackButton />
+            <div className="w-full h-[1px] bg-border" />
+            <ManageWish wish={data} onRevalidate={handleRevalidation} />
+            <div className="w-full h-[1px] bg-border" />
 
             <div className={"flex justify-center w-full mt-10"}>
                 <div className={"flex w-3/4 gap-10 p-6 bg-card rounded-xl shadow-lg  flex-col md:flex-row"}>

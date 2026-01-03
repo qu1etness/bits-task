@@ -1,8 +1,8 @@
-import { Link } from "react-router";
+import {Link} from "react-router";
 import {Button} from "@/components/ui/button.tsx";
 import type {IWish} from "@/interfaces/wish-interface.ts";
 
-const WishCard = ({ wish } : { wish: IWish }) => {
+const WishCard = ({wish}: { wish: IWish }) => {
 
     return (
         <div className="rounded-lg shadow p-4 bg-card flex flex-col justify-end">

@@ -1,5 +1,3 @@
-
-
 export interface IWish {
     id: number;
     title: string;
