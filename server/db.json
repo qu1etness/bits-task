@@ -9,13 +9,6 @@
       "createdAt": "2024-12-03T17:10:58.899Z"
     },
     {
-      "title": "Smartphone ChickenMac",
-      "description": "Latest model smartphone with advanced features.",
-      "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3j9Tm0c2L9OyDL4_CdvLn_J2rnVLeOprk3w&s",
-      "price": 999.99,
-      "id": "5"
-    },
-    {
       "id": "6",
       "title": "Travel Backpack",
       "description": "Durable backpack for all my travel needs.",
@@ -71,20 +64,76 @@
       "createdAt": "2025-12-05T12:39:31.386Z"
     },
     {
-      "id": "76e1",
-      "title": "Merrill Rosales",
-      "description": "Sequi omnis quo qui ",
-      "imagePath": "Officiis quo et inci",
-      "price": 933,
-      "createdAt": "2025-12-05T14:13:50.397Z"
-    },
-    {
       "id": "0e7d",
       "title": "Quincy Lindsay",
       "description": "Sint sit quod ipsum",
       "imagePath": "Ut quibusdam blandit",
       "price": 923,
       "createdAt": "2025-12-05T14:59:07.688Z"
+    },
+    {
+      "id": "de28",
+      "title": "Abraham King",
+      "description": "Inventore sit commod",
+      "imagePath": "Rerum fuga Quis ips",
+      "price": 335,
+      "createdAt": "2026-01-02T20:37:41.803Z"
+    },
+    {
+      "id": "1578",
+      "title": "Theodore Lancaster",
+      "description": "Recusandae Ex aliqu",
+      "imagePath": "Eligendi laudantium",
+      "price": 401,
+      "createdAt": "2026-01-03T14:07:31.915Z"
+    },
+    {
+      "id": "909f",
+      "title": "Brett Blankenship",
+      "description": "Ducimus eum odio an",
+      "imagePath": "Aliquid qui voluptat",
+      "price": 689,
+      "createdAt": "2026-01-03T15:23:38.627Z"
+    },
+    {
+      "id": "3b30",
+      "title": "",
+      "description": "",
+      "imagePath": "",
+      "price": null,
+      "createdAt": "2026-01-03T15:23:45.698Z"
+    },
+    {
+      "id": "f671",
+      "title": "Alyssa Singleton",
+      "description": "Voluptatum corporis ",
+      "imagePath": "Eos veniam ipsam i",
+      "price": 717,
+      "createdAt": "2026-01-03T15:23:57.936Z"
+    },
+    {
+      "id": "0e98",
+      "title": "",
+      "description": "",
+      "imagePath": "",
+      "price": null,
+      "createdAt": "2026-01-03T15:24:23.077Z"
+    },
+    {
+      "id": "de89",
+      "title": "Ginger Galloway",
+      "description": "Nyssa Stein",
+      "imagePath": "Audra Poole",
+      "price": null,
+      "createdAt": "2026-01-03T15:28:32.804Z"
+    },
+    {
+      "id": "d927",
+      "title": "Bertha Griffin",
+      "description": "Non omnis iste autem",
+      "imagePath": "Corporis eu doloribu",
+      "price": 698,
+      "createdAt": "2026-01-03T15:30:19.723Z"
     }
   ]
 }

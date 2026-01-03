@@ -15,17 +15,16 @@ import {useWishesContext} from "@/hooks/use-wishes-contex.ts";
 import {toast} from "sonner";
 import {useNavigate} from "react-router";
 
-const ManageWish = ({ wish, onRevalidate } :{
+const ManageWish = ({wish, onRevalidate}: {
     wish: IWish
     onRevalidate: () => Promise<void>
 }) => {
 
     const [isOpen, setIsOpen] = useState(false)
-
-
     const navigate = useNavigate();
 
-    const { updateWish, deleteWish } = useWishesContext()
+
+    const {updateWish, deleteWish} = useWishesContext()
 
     const handleEdit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -59,7 +58,7 @@ const ManageWish = ({ wish, onRevalidate } :{
         }
     }
 
-    const { description, price, title, imagePath } = wish || {};
+    const {description, price, title, imagePath} = wish || {};
 
     return (
         <div className="my-6 mx-14 flex justify-between items-center gap-6">

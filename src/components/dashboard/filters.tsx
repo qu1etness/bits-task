@@ -1,6 +1,7 @@
-import {Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue} from "@/components/ui/select.tsx";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select.tsx";
+import { filterItems } from "@/utils/sorting";
 
-const Filters = ({ value, onChange }: { value: any; onChange: (v: any) => void }) => {
+const Filters = ({ value, onChange }: { value: { orderBy: string }; onChange: (v: { orderBy: string }) => void }) => {
 
     const handleDateChange = (val: string) => {
         onChange({ orderBy: val })
@@ -11,19 +12,17 @@ const Filters = ({ value, onChange }: { value: any; onChange: (v: any) => void }
             <div>
                 <Select value={value.orderBy} onValueChange={handleDateChange}>
                     <SelectTrigger className="w-[180px]">
-                        <SelectValue placeholder="Sort by date"/>
+                        <SelectValue placeholder="Sort by date" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectGroup>
-                            <SelectLabel>Date</SelectLabel>
-                            <SelectItem value="newest">Newest</SelectItem>
-                            <SelectItem value="oldest">Oldest</SelectItem>
-                        </SelectGroup>
-                        <SelectGroup>
-                            <SelectLabel>Price</SelectLabel>
-                            <SelectItem value="to-low">High to Low</SelectItem>
-                            <SelectItem value="to-high">Low to High</SelectItem>
-                        </SelectGroup>
+                        {filterItems.map(value => (
+                            <SelectGroup key={value.name}>
+                                <SelectLabel>{value.name}</SelectLabel>
+                                {value.options.map((option) => (
+                                    <SelectItem key={option} value={option}>{option}</SelectItem>
+                                ))}
+                            </SelectGroup>
+                        ))}
                     </SelectContent>
                 </Select>
             </div>
