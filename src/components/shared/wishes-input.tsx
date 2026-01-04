@@ -1,12 +1,8 @@
 import { Input } from "@/components/ui/input.tsx";
 import { useId, type ComponentProps } from "react";
 
-interface IProps extends ComponentProps<"input"> {
-    name: string
-    placeholder: string
-}
 
-const WishesInput = ({ name, placeholder, ...props }: IProps) => {
+const WishesInput = ({ name, placeholder, ...props }: ComponentProps<"input">) => {
 
     const uniqeId = useId()
 

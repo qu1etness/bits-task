@@ -1,12 +1,11 @@
 {
   "wishes": [
     {
-      "id": "3",
-      "title": "PC",
-      "description": "nice pc",
+      "title": "Dream PC / 100 gpu",
+      "description": "Absolutely amazing pc. BUY IT NOOOOWWW",
       "imagePath": "https://m.media-amazon.com/images/I/61GGZRBy8KL.jpg",
       "price": 6199,
-      "createdAt": "2024-12-03T17:10:58.899Z"
+      "id": "3"
     },
     {
       "id": "6",
@@ -15,22 +14,6 @@
       "imagePath": "",
       "price": 149.99,
       "createdAt": "2025-06-18T11:20:00.000Z"
-    },
-    {
-      "id": "8",
-      "title": "Fitness Tracker",
-      "description": "Track my workouts and health metrics.",
-      "imagePath": "",
-      "price": 199.99,
-      "createdAt": "2025-08-30T08:15:00.000Z"
-    },
-    {
-      "id": "12",
-      "title": "4K Monitor",
-      "description": "High-resolution monitor for work and entertainment.",
-      "imagePath": "",
-      "price": 349.99,
-      "createdAt": "2025-12-01T12:00:00.000Z"
     },
     {
       "title": "Steel Pate",
@@ -64,76 +47,27 @@
       "createdAt": "2025-12-05T12:39:31.386Z"
     },
     {
-      "id": "0e7d",
       "title": "Quincy Lindsay",
       "description": "Sint sit quod ipsum",
-      "imagePath": "Ut quibusdam blandit",
+      "imagePath": "https://cdn-images.dzcdn.net/images/cover/f395a76527eab444b454e9ce964461d6/0x1900-000000-80-0-0.jpg",
       "price": 923,
-      "createdAt": "2025-12-05T14:59:07.688Z"
+      "id": "0e7d"
     },
     {
-      "id": "de28",
-      "title": "Abraham King",
-      "description": "Inventore sit commod",
-      "imagePath": "Rerum fuga Quis ips",
-      "price": 335,
-      "createdAt": "2026-01-02T20:37:41.803Z"
+      "id": "6597",
+      "title": "Magee Hull",
+      "description": "Nemo commodi ut vel ",
+      "imagePath": "Consequatur enim te",
+      "price": 449,
+      "createdAt": "2026-01-04T17:45:32.753Z"
     },
     {
-      "id": "1578",
-      "title": "Theodore Lancaster",
-      "description": "Recusandae Ex aliqu",
-      "imagePath": "Eligendi laudantium",
-      "price": 401,
-      "createdAt": "2026-01-03T14:07:31.915Z"
-    },
-    {
-      "id": "909f",
-      "title": "Brett Blankenship",
-      "description": "Ducimus eum odio an",
-      "imagePath": "Aliquid qui voluptat",
-      "price": 689,
-      "createdAt": "2026-01-03T15:23:38.627Z"
-    },
-    {
-      "id": "3b30",
-      "title": "",
-      "description": "",
-      "imagePath": "",
-      "price": null,
-      "createdAt": "2026-01-03T15:23:45.698Z"
-    },
-    {
-      "id": "f671",
-      "title": "Alyssa Singleton",
-      "description": "Voluptatum corporis ",
-      "imagePath": "Eos veniam ipsam i",
-      "price": 717,
-      "createdAt": "2026-01-03T15:23:57.936Z"
-    },
-    {
-      "id": "0e98",
-      "title": "",
-      "description": "",
-      "imagePath": "",
-      "price": null,
-      "createdAt": "2026-01-03T15:24:23.077Z"
-    },
-    {
-      "id": "de89",
-      "title": "Ginger Galloway",
-      "description": "Nyssa Stein",
-      "imagePath": "Audra Poole",
-      "price": null,
-      "createdAt": "2026-01-03T15:28:32.804Z"
-    },
-    {
-      "id": "d927",
-      "title": "Bertha Griffin",
-      "description": "Non omnis iste autem",
-      "imagePath": "Corporis eu doloribu",
-      "price": 698,
-      "createdAt": "2026-01-03T15:30:19.723Z"
+      "id": "b3b5",
+      "title": "Kyla Flores",
+      "description": "In amet inventore n",
+      "imagePath": "Asperiores sunt occa",
+      "price": 342,
+      "createdAt": "2026-01-04T17:52:16.650Z"
     }
   ]
 }

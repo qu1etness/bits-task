@@ -2,6 +2,7 @@
 import { type FormEvent } from "react";
 import { useWishesContext } from "@/hooks/use-wishes-contex.ts";
 import WishesDialog from "../shared/wishes-dialog";
+import { Plus } from "lucide-react";
 
 const CreateWishDialog = () => {
 
@@ -20,7 +21,9 @@ const CreateWishDialog = () => {
     }
 
     return (
-        <WishesDialog title="Add new wish" onSubmit={handleSubmit} />
+        <WishesDialog title="Add new wish" onSubmit={handleSubmit} >
+            <Plus />
+        </WishesDialog>
     );
 };
 

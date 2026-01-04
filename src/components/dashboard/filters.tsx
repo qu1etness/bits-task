@@ -1,7 +1,12 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select.tsx";
 import { filterItems } from "@/utils/sorting";
 
-const Filters = ({ value, onChange }: { value: { orderBy: string }; onChange: (v: { orderBy: string }) => void }) => {
+interface IProps {
+    value: { orderBy: string };
+    onChange: (v: { orderBy: string }) => void;
+}
+
+const Filters = ({ value, onChange }: IProps) => {
 
     const handleDateChange = (val: string) => {
         onChange({ orderBy: val })

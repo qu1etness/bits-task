@@ -67,9 +67,9 @@ export const WishesProvider = ({ children }: { children: React.ReactNode }) => {
     }, [dispatch]);
 
     const deleteWish = useCallback(async (id: number) => {
+        return await wishesApi.remove(id);
 
         try {
-            await wishesApi.remove(id);
             toast.success("Wishes deleted successfully.");
             dispatch({ type: "DELETE_WISH_SUCCESS", payload: id });
         } catch (e) {
