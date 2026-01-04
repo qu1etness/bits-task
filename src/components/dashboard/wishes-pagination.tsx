@@ -6,11 +6,13 @@ import {
     PaginationPrevious
 } from "@/components/ui/pagination.tsx";
 
-const WishesPagination = ({ page = 0, totalPages, onChange }: {
+interface IProps {
     page: number;
     totalPages?: number;
     onChange?: (setter: (prevState: number) => number) => void;
-} ) => {
+}
+
+const WishesPagination = ({ page = 0, totalPages, onChange }: IProps) => {
 
     const handleRaisePage = () => {
         if (onChange) {
@@ -28,7 +30,7 @@ const WishesPagination = ({ page = 0, totalPages, onChange }: {
         <Pagination className="my-20">
             <PaginationContent>
                 <PaginationItem>
-                    <PaginationPrevious isActive={page < 1} onClick={handleLowerPage}/>
+                    <PaginationPrevious isActive={page < 1} onClick={handleLowerPage} />
                 </PaginationItem>
                 <PaginationItem>
                     {page + 1}

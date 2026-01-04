@@ -1,10 +1,13 @@
 import WishCard from "./wish-card.tsx";
 import type { IWish } from "@/interfaces/wish-interface.ts";
 
-const WishList = ({ items, loading }: {
+interface IProps {
     items: IWish[];
     loading: boolean;
-}) => {
+}
+
+const WishList = ({ items, loading }: IProps) => {
+
     if (loading) return <div>Loading...</div>;
     if (items.length === 0) return <div>No wishes yet</div>;
 

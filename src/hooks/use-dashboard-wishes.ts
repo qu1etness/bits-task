@@ -7,7 +7,7 @@ export const useDashboardWishes = (wishes: IWish[]) => {
     const [pagination, setPagination] = useState(0);
     const [filter, setFilter] = useState({ orderBy: "to-low" });
 
-    const totalPages = Math.ceil(wishes.length / 10);
+    const totalPages = Math.floor((wishes.length - 1) / 10);
 
     const filteredItems = useMemo(() => {
         const sorted = [...wishes].sort(sortStrategies[filter.orderBy]);
