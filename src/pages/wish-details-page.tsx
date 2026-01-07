@@ -19,7 +19,7 @@ const WishDetailsPage = () => {
         <div className="w-full min-h-screen bg-background">
             <GoBackButton />
             <div className="w-full h-[1px] bg-border" />
-            {data?.title && <ManageWish title={title} />}
+            {data?.title && <ManageWish />}
             <div className="w-full h-[1px] bg-border" />
             <WishDetailCard title={title} description={description} price={price} imagePath={imagePath} createdAt={createdAt} />
         </div>

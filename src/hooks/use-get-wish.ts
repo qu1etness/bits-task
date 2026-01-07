@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from "react";
 import { useWishesContext } from "./use-wishes-contex";
+import { toast } from "sonner";
 
 
 export const useGetWish = (id: string) => {
@@ -8,7 +9,11 @@ export const useGetWish = (id: string) => {
 
     const handleRevalidation = useCallback(async () => {
         if (id !== undefined) {
-            await getWish(id);
+            try {
+                await getWish(id);
+            } catch (e) {
+                toast.error(e instanceof Error ? e.message : "Failed to fetch wish");
+            }
         }
     }, [id, getWish]);
 

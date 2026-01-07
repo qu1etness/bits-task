@@ -1,6 +1,6 @@
 import type { IWish } from "@/interfaces/wish-interface";
 
-const API_BASE  = import.meta.env.VITE_API_URL as string || "http://localhost:3000/wishes";
+const API_BASE = import.meta.env.VITE_API_URL as string || "http://localhost:3000/wishes";
 
 async function handleResponse<T>(res: Response): Promise<T> {
     if (!res.ok) {
@@ -21,7 +21,6 @@ export const wishesApi = {
         const url = `${API_BASE}/${id}`;
         const res = await fetch(url);
         return handleResponse<IWish>(res);
-        console.log("Fetched wish:", res);
     },
 
     create: async (payload: Omit<IWish, 'id'>): Promise<IWish> => {
@@ -34,7 +33,7 @@ export const wishesApi = {
         return handleResponse<IWish>(res);
     },
 
-    update: async (id: number, payload: Partial<IWish>): Promise<IWish> => {
+    update: async (id: string, payload: Partial<IWish>): Promise<IWish> => {
         const url = `${API_BASE}/${id}`;
         const res = await fetch(url, {
             method: "PUT",
@@ -44,7 +43,7 @@ export const wishesApi = {
         return handleResponse<IWish>(res);
     },
 
-    remove: async (id: number): Promise<boolean> => {
+    remove: async (id: string): Promise<boolean> => {
         const url = `${API_BASE}/${id}`;
         const res = await fetch(url, {
             method: "DELETE",

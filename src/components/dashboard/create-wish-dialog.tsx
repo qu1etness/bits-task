@@ -4,11 +4,13 @@ import { useWishesContext } from "@/hooks/use-wishes-contex.ts";
 import WishesDialog from "../shared/wishes-dialog";
 import { Plus } from "lucide-react";
 
+import { toast } from "sonner";
+
 const CreateWishDialog = () => {
 
     const { createWish } = useWishesContext()
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         const formData = new FormData(e.currentTarget);
 
         const title = formData.get('name') as string;
@@ -17,7 +19,13 @@ const CreateWishDialog = () => {
         const price = parseFloat(formData.get('price') as string);
         const createdAt = new Date().toISOString()
 
-        createWish({ title, description, imagePath, price, createdAt });
+        try {
+            await createWish({ title, description, imagePath, price, createdAt });
+            toast.success("Wish created successfully");
+        } catch (e) {
+            console.error("Create failed:", e);
+            toast.error("Failed to create wish");
+        }
     }
 
     return (

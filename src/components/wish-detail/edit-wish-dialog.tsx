@@ -4,10 +4,13 @@ import type { IWish } from "@/interfaces/wish-interface";
 import type { FormEvent } from "react";
 import { useWishesContext } from "@/hooks/use-wishes-contex";
 
-const EditWishDialog = () => {
+interface IProps {
+    wish: IWish
+}
 
+const EditWishDialog = ({ wish }: IProps) => {
 
-    const { updateWish, getWish, state: { currentWish: wish } } = useWishesContext()
+    const { updateWish, getWish } = useWishesContext()
 
     const handleEdit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -21,8 +24,9 @@ const EditWishDialog = () => {
         };
 
         try {
-            await updateWish(wish?.id, payload);
+            await updateWish(`${wish?.id}`, payload);
             await getWish(`${wish?.id}`);
+            toast.success("Wish updated successfully");
         } catch (e) {
             console.error("Update failed:", e);
             toast.error('Error updating wishes');

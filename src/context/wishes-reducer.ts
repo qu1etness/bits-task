@@ -1,4 +1,4 @@
-import type {IWish} from "@/interfaces/wish-interface.ts";
+import type { IWish } from "@/interfaces/wish-interface.ts";
 
 type status = 'idle' | 'loading' | 'error' | 'success';
 
@@ -16,7 +16,7 @@ export interface IWishState {
     createError: string | null,
 
     updateStatus: status,
-    updateError: string | null ,
+    updateError: string | null,
 
     deleteStatus: status,
     deleteError: string | null,
@@ -35,6 +35,7 @@ export type WishAction =
     { type: "CREATE_WISH_LOADING" } |
     { type: "UPDATE_WISH_SUCCESS", payload: IWish } |
     { type: "UPDATE_WISH_LOADING" } |
+    { type: "UPDATE_WISH_ERROR", payload: string } |
     { type: "DELETE_WISH_ERROR", payload: string } |
     { type: "DELETE_WISH_LOADING" } |
     { type: "DELETE_WISH_SUCCESS", payload: number }
@@ -133,6 +134,12 @@ export const wishesReducer = (state: IWishState, action: WishAction): IWishState
                 updateStatus: 'success',
                 updateError: null,
             }
+        case "UPDATE_WISH_ERROR":
+            return {
+                ...state,
+                updateStatus: 'error',
+                updateError: action.payload,
+            };
 
         case "DELETE_WISH_SUCCESS":
             return {

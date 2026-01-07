@@ -1,5 +1,5 @@
-import {useContext} from "react";
-import {WishesContext} from "@/context/wishes-contex.tsx";
+import { useContext } from "react";
+import { WishesContext } from "@/context/wishes-context";
 
 export const useWishesContext = () => {
     const context = useContext(WishesContext);

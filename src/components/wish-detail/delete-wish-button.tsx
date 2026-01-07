@@ -3,22 +3,30 @@ import { Button } from "../ui/button";
 import { useNavigate } from "react-router";
 import type { ComponentProps } from "react";
 
+import { toast } from "sonner";
 
-const DeleteWishButton = ({ ...props }: ComponentProps<'button'>) => {
+interface DeleteWishButtonProps extends ComponentProps<'button'> {
+    wishTitle: string;
+    wishId: number;
+}
+
+const DeleteWishButton = ({ wishTitle, wishId, ...props }: DeleteWishButtonProps) => {
 
     const navigate = useNavigate();
 
-    const { deleteWish, state: { currentWish: wish } } = useWishesContext()
+    const { deleteWish } = useWishesContext()
 
     const handleDelete = async () => {
-        if (!window.confirm(`Ви впевнені, що хочете ви далити "${wish?.title}"?`)) {
+        if (!window.confirm(`Ви впевнені, що хочете ви далити "${wishTitle}"?`)) {
             return;
         }
         try {
-            await deleteWish(wish.id);
+            await deleteWish(String(wishId));
+            toast.success("Wish deleted successfully");
             navigate("/dashboard");
         } catch (e) {
             console.error("Delete failed:", e);
+            toast.error("Failed to delete wish");
         }
     }
 
