@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from "react-router/dom";
 import './index.css'
 import router from "./routes.ts";
-import { WishesProvider } from "@/context/wishes-contex.tsx";
+import { WishesProvider } from "@/context/wishes-context.tsx";
 import { Toaster } from 'sonner'
 import { Snowfall } from "react-snowfall";
 

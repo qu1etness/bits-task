@@ -8,14 +8,6 @@
       "id": "3"
     },
     {
-      "id": "6",
-      "title": "Travel Backpack",
-      "description": "Durable backpack for all my travel needs.",
-      "imagePath": "",
-      "price": 149.99,
-      "createdAt": "2025-06-18T11:20:00.000Z"
-    },
-    {
       "title": "Steel Pate",
       "description": "Natus itaque ut quis",
       "imagePath": "https://i.mi.ua/media/catalog/product/cache/1/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/a/_/a_2025-43u-left__1_2.webp",
@@ -54,20 +46,20 @@
       "id": "0e7d"
     },
     {
-      "id": "6597",
-      "title": "Magee Hull",
-      "description": "Nemo commodi ut vel ",
-      "imagePath": "Consequatur enim te",
-      "price": 449,
-      "createdAt": "2026-01-04T17:45:32.753Z"
-    },
-    {
       "id": "b3b5",
       "title": "Kyla Flores",
       "description": "In amet inventore n",
       "imagePath": "Asperiores sunt occa",
       "price": 342,
       "createdAt": "2026-01-04T17:52:16.650Z"
+    },
+    {
+      "id": "26a4",
+      "title": "TaShya Trujillo",
+      "description": "Soluta pariatur Cul",
+      "imagePath": "https://play-lh.googleusercontent.com/6Xe9DWiMC76daosOC80Im9gqe25Q9P55LxJIGPTLbcdFkMXOur4mk8jTVxoqOaiAvAG4=w240-h480-rw",
+      "price": 580,
+      "createdAt": "2026-01-07T13:31:11.732Z"
     }
   ]
 }
